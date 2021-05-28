@@ -17,9 +17,6 @@ class pruebasSelenium(unittest.TestCase):
         driver = self.driver
         driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html")
         time.sleep(2)
-        ventana_cerrar = driver.find_element_by_xpath("/html/body/div[3]/div/div[1]/div/div[2]/a")
-        ventana_cerrar.click()
-        time.sleep(2)
         input_nombre = driver.find_element_by_id("user-message")
         input_nombre.send_keys("Armando Padilla")
         time.sleep(2)
